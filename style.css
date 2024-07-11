@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
+body {
+  font-size: 14px;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", "YoungSerif", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  width: min(100%, 375px);
+  text-align: justify;
+  padding: 0 1.5rem;
+}
+.make_bold {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: hsl(30, 10%, 34%);
+}
+.content__p {
+  line-height: 1.4rem;
+}
+.marginTB {
+  margin: 1rem 0;
+}
+.preparation {
+  background-color: hsl(30, 54%, 90%);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.8rem;
+}
+.preparation__h3 {
+  margin: 1rem 0;
+  color: hsl(332, 51%, 32%);
+}
+.preparation__ul {
+  padding-left: 1.8rem;
+}
+.preparation__ul li {
+  margin-bottom: 0.7rem;
+}
+.section__h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 2rem;
+}
+.section__ul {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  line-height: 1.4rem;
+}
+.section__ul li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.5rem;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+th,
+td {
+  text-align: left;
+  padding-right: 5rem;
+  border-bottom: 2px solid hsl(30, 18%, 87%) !important;
+}
+tr:last-child th,
+tr:last-child td {
+  border-bottom: none !important;
+}
+td {
+  padding-left: 20px;
+  color: hsl(14, 45%, 36%);
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    max-width: 1440px;
+    height: 50%;
+  }
+  .content {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    width: min(100%, 375px);
+    text-align: justify;
+    padding: 1.5rem;
+  }
+}
